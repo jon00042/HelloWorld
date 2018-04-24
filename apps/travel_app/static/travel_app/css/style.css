@@ -1,0 +1,50 @@
+.white-fg {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.home-page {
+    background-image: url("../images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.planes-page {
+    background-image: url("../images/airport.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.trains-page {
+    background-image: url("../images/train-interior.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.automobiles-page {
+    background-image: url("../images/road.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.boats-page {
+    background-image: url("../images/yacht.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.account-page {
+    background-image: url("../images/huts.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-page {
+    background-image: url("../images/greek-coast.jpg");
+    background-size: cover;
+    background-position: center;
+}

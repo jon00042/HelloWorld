@@ -1,0 +1,31 @@
+{% extends 'travel_app/base.html' %}
+
+{% block body %}
+
+<div class="jumbotron jumbotron-fluid automobiles-page">
+    <h1 class="text-center mt-2 mb-5 white-fg">From fuel efficient to sporty...</h1>
+    <form class="col-10 offset-1 border p-3 white-bg">
+        <div class="row mb-2">
+            <div class="col">Rental Start Date</div>
+            <div class="col">Rental End Date</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Rental City">
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary ml-3">Find Cars</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

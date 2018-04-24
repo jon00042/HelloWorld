@@ -1,0 +1,19 @@
+{% extends 'travel_app/base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <form action="{% url 'bill_tracker:update_bill' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group row px-3 my-3">
+            <input type="hidden" name="bill_id" value="{{bill.id}}">
+            <input value="{{bill.desc}}" type="text" name="desc" class="form-control col-6" placeholder="Description">
+            <input value="{{bill.amount}}" type="text" name="amount" class="form-control col-2 ml-3" placeholder="Amount">
+            <button class="btn btn-primary ml-3">Save</button>
+            <a href="{% url 'bill_tracker:index' %}" class="btn btn-secondary ml-3">Cancel</a>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
